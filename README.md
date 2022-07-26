@@ -1,4 +1,4 @@
-# TT Project Rootz
+# Project Rootz
 
 - Next.js
 - React
