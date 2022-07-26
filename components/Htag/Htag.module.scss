@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.h2 {
+  // display: inline-block;
+  // margin: 0;
+
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  color: $color_Bleached-Cedar;
+}
+
+.h3 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: capitalize;
+  color: $color_Black-Velvet;
+}
+
+.h4 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 48px;
+  color: $color_Carbon;
+}

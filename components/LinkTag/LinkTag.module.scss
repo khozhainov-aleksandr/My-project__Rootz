@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.a {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $color_Black__opacity08;
+  text-decoration: none;
+}
+
+.normal {
+  transition:
+    text-shadow $transition-time,
+    color $transition-time;
+
+  &:hover {
+    text-shadow:0px 0px 1px $color_Black;
+    color: $color_Black;
+  }
+}

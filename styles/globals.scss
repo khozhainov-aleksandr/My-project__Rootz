@@ -1,0 +1,18 @@
+@import './variables';
+@import './mixin';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $color_Black ;
+  background-color: $color_White;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 20px;
+}

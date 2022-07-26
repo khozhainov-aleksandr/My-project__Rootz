@@ -1,0 +1,99 @@
+@import '../../styles/variables';
+
+.button {
+  display: inline-block;
+  font-family: 'Poppins';
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.notColored {
+  padding: 12px 48px;
+  font-size: 16px;
+  color: $color_Black;
+  background-color: $color_White;
+
+  box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+  border: 1px solid $color_White;
+  border-radius: 40px;
+  transition: border 0.3s;
+  
+  &:hover {
+    border: 1px solid $color_Black;
+  }
+}
+
+.colored {
+  padding: 14px 36px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $color_White;
+  background-color: $color_Melon-Baby;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $color_Melon-Baby_hover;
+  }
+}
+
+.round {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  font-size: 0;
+  background-color: $color_Melon-Baby;
+  border: none;
+  border-radius: 50%;
+  transition: background-color $transition-time;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color_Melon-Baby_hover;
+  }
+
+  &__plus {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-top: 2px solid $color_White;
+      width: 14px;
+      border-radius: 2px;
+    }
+  
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-left: 2px solid $color_White;
+      height: 14px;
+      border-radius: 2px;
+    }
+  }
+
+  &__minus {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-top: 2px solid $color_White;
+      width: 14px;
+      border-radius: 2px;
+    }
+  }
+}

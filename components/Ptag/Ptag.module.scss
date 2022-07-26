@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+
+.p {
+  display: inline-block;
+  margin: 0;
+
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color_Black;
+}
+
+.large {
+  font-size: 18px;
+  line-height: 32px;
+  color: $color_Bleached-Cedar;
+  opacity: 0.9;
+}
+
+.normal {
+  line-height: 32px;
+}
+
+.normalOps {
+  color: $color_Bleached-Cedar;
+  opacity: 0.9;
+}
+
+.small {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: $color_Carbon;
+}
