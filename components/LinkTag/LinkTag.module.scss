@@ -19,3 +19,16 @@
     color: $color_Black;
   }
 }
+
+.extraSmall {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: $color_Cloudburst;
+
+  &500 {
+    @extend .extraSmall;
+    font-weight: 500;
+    text-decoration-line: none;
+  }
+}
