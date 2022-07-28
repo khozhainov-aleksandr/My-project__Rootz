@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.newsWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  height: 112px;
+}
+
+.img {
+  height: inherit;
+
+  img {
+    height: 100%;
+  }
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 184px;
+
+  & a:nth-child(1) {
+    margin-bottom: 8px;
+  }
+
+  & a:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+
+.hashtagLink {
+  padding-right: 4px;
+  color: $color_Carbon;
+}
