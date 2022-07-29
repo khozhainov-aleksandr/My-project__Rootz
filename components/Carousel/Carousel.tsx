@@ -10,14 +10,14 @@ interface Children {
 }
 
 export const Carousel: React.FC<CarouselProps> = ({ children }): JSX.Element => {
-  const [pages, setPages] = useState<Children[]>([]);
+  const [pages, setPages] = useState<[]>([]);
   const [offset, setOffset] = useState<number>(0);
 
   const PAGE_WIDTH = 992;
 
   useEffect(() => {
     setPages(
-      Children.map(children, child => {
+      Children.map<T, C>(children, child => {
         return cloneElement(child, {
           style: {
             height: '100%',
