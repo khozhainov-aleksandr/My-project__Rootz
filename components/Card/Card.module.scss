@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.card {
+  padding: 80px 64px 0 80px;
+  display: flex;
+  column-gap: 144px;
+  border-radius: 20px;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 42px;
+  padding-top: calc(94px - 80px);
+  width: 384px;
+}

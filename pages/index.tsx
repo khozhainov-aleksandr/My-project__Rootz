@@ -3,6 +3,7 @@ import { Header } from "../layout/Header";
 import { Navigation } from "../layout/Navigation";
 import { Main } from "../layout/Main";
 import { NewsSection } from "../layout/NewsSection";
+import { CarouselCard } from "../layout/CarouselCard";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
 
       <Main>
         <NewsSection />
+        <CarouselCard />
       </Main>
     </>
   );
