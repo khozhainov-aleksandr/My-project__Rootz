@@ -4,13 +4,23 @@ export interface CarouselProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivE
   children: ReactNode;
 }
 
-export interface ChildrenProps {
-  child?: string;
-  children?: React.ReactNode;
-}
-
-export interface ChildProps {
-  height: string;
-  minWidth: string;
-  maxWidth: string;
+export interface PagesProps {
+  // $$typeof?: Symbol(react.element)
+  key: string;
+  props: {
+    classCard: string;
+    titleChildren: string;
+    descChildren: string;
+    style: {
+      height: string;
+      maxWidth: string;
+      minWidth: string;
+    }
+  }
+  ref: null;
+  // type: ƒ (param)
+  // _owner: FiberNode {tag: 0, key: null, stateNode: null, elementType: ƒ, type: ƒ, …}
+  // _store: {validated: false}
+  // _self: undefined
+  // _source: {fileName: '/Users/aleksandr/Documents/GitHub/Mate_Academy/My-…oject__Rootz/layout/CarouselCard/CarouselCard.tsx', lineNumber: 40, columnNumber: 15}
 }
