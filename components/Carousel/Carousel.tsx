@@ -1,33 +1,33 @@
 import React, { cloneElement } from "react";
 import { useState, useEffect, Children } from "react";
-import { CarouselProps } from "./Carousel.props";
+import { CarouselProps, PagesProps } from "./Carousel.props";
+import { Card } from "../Card";
 import { Picture } from "../Picture";
 import styles from './Carousel.module.scss';
 
-interface Children {
-  children: React.ReactNode;
-  child: string;
-}
-
 export const Carousel: React.FC<CarouselProps> = ({ children }): JSX.Element => {
-  const [pages, setPages] = useState<[]>([]);
+  const [pages, setPages] = useState<PagesProps[]>([]);
   const [offset, setOffset] = useState<number>(0);
 
   const PAGE_WIDTH = 992;
 
+  const childrenElement = Children.map(children, child => {
+    if (child.type === Card) {
+      return cloneElement(child, {
+        style: {
+          height: '100%',
+          minWidth: `${PAGE_WIDTH}px`,
+          maxWidth: `${PAGE_WIDTH}px`,
+        },
+      });
+    }
+  });
+
   useEffect(() => {
-    setPages(
-      Children.map<T, C>(children, child => {
-        return cloneElement(child, {
-          style: {
-            height: '100%',
-            minWidth: `${PAGE_WIDTH}px`,
-            maxWidth: `${PAGE_WIDTH}px`,
-          },
-        });
-      })
-    );
+    setPages(childrenElement);
   }, []);
+
+  console.log(pages);
 
   function leftArrowClick() {
     setOffset((currentOffset) => {
@@ -59,7 +59,13 @@ export const Carousel: React.FC<CarouselProps> = ({ children }): JSX.Element => 
           className={styles.allCardsWrapper}
           style={{transform: `translateX(${offset}px)`}}
         >
-          {pages}
+          {
+            pages?.map((child, id) =>(
+              <React.Fragment key={id}>
+                {child}
+              </React.Fragment>
+            ))
+          }
         </div>
       </div>
 
