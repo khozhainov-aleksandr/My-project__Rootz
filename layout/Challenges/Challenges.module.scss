@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+
+$titleWidth: 930px;
+
+.challenges {
+  margin-bottom: 192px;
+}
+
+.mainWrapper {
+  padding-top: 208px;
+  background-image: url(../../public/sun_with_leaves.svg);
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+  background-size: contain;
+}
+
+.titleWrapper {
+  margin: 0 auto 82px;
+  width: $titleWidth;
+  text-align: center;
+  
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 62px;
+    width: calc($titleWidth - 190px);
+    border-bottom: 4px solid $color_Bleached-Cedar;
+  }
+}
+
+.additionalContent {
+  display: flex;
+  justify-content: center;
+  gap: 94px;
+}
+
+.contentItem {
+  display: flex;
+  align-items: center;
+  width: 182px;
+  gap: 20px;
+}

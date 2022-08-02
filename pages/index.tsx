@@ -5,6 +5,7 @@ import { Main } from "../layout/Main";
 import { NewsSection } from "../layout/NewsSection";
 import { CarouselCard } from "../layout/CarouselCard";
 import { OurTeam } from "../layout/OurTeam";
+import { Challenges } from "../layout/Challenges";
 import { AuthorizationForm } from "../layout/AuthorizationForm";
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
         <NewsSection />
         <CarouselCard />
         <OurTeam />
-        {/* <Challenges /> */}
+        <Challenges />
         <AuthorizationForm />
       </Main>
     </>

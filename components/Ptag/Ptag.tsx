@@ -8,6 +8,7 @@ export const Ptag: React.FC<PtagProps> = ({ size, children, className, ...props 
     [styles.large]: size === 'large',
     [styles.normal]: size === 'normal',
     [styles.normalOps]: size === 'normalOps',
+    [styles.extraSmall]: size === 'extraSmall',
     [styles.small]: size === 'small',
   });
 
