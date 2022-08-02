@@ -4,6 +4,7 @@ import { Navigation } from "../layout/Navigation";
 import { Main } from "../layout/Main";
 import { NewsSection } from "../layout/NewsSection";
 import { CarouselCard } from "../layout/CarouselCard";
+import { OurTeam } from "../layout/OurTeam";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Main>
         <NewsSection />
         <CarouselCard />
+        <OurTeam />
       </Main>
     </>
   );
