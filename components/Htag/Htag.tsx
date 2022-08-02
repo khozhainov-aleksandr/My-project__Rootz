@@ -32,6 +32,13 @@ export const Htag: React.FC<HtagProps> = ({ tag, children }): JSX.Element => {
         </h4>
       );
 
+    case 'h5':
+      return (
+        <h5 className={`${styles.header} ${styles.h5}`}>
+          {children}
+        </h5>
+      );
+
     case 'h6': 
       return (
         <h6 className={`${styles.header} ${styles.h6}`}>
