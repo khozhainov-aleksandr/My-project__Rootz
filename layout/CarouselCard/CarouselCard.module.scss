@@ -4,6 +4,34 @@
   margin-bottom: 192px;
 }
 
+.mainWrapper {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: calc(992px + (64px * 2) + (24px * 2));
+  height: 512px;
+  border-radius: 20px;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.visibleArea {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.allCardsWrapper {
+  height: 100%;
+  display: flex;
+  transition: translate;
+  transition-property: transform;
+  transition-duration: calc($transition-time * 2);
+  transition-timing-function: ease-out;
+}
+
 .card {
   &__1 {
     background-color: $color_Prairie-Sunset;
