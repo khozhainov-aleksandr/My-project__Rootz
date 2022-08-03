@@ -9,6 +9,8 @@ export const Carousel: React.FC<CarouselProps> = ({ children }): JSX.Element => 
   const [pages, setPages] = useState<PagesProps[]>([]);
   const [offset, setOffset] = useState<number>(0);
 
+  console.log(pages);
+
   const PAGE_WIDTH = 992;
 
   const childrenElement = Children.map(children, child => {
@@ -66,6 +68,8 @@ export const Carousel: React.FC<CarouselProps> = ({ children }): JSX.Element => 
               </React.Fragment>
             ))
           }
+
+          {/* {pages} */}
         </div>
       </div>
 

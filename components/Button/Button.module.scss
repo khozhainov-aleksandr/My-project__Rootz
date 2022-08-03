@@ -41,12 +41,12 @@
   }
 }
 
-.round {
+.round__plus {
   display: inline-block;
   position: relative;
   height: 40px;
   width: 40px;
-  font-size: 0;
+
   background-color: $color_Melon-Baby;
   border: none;
   border-radius: 50%;
@@ -57,43 +57,56 @@
     background-color: $color_Melon-Baby_hover;
   }
 
-  &__plus {
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-top: 2px solid $color_White;
-      width: 14px;
-      border-radius: 2px;
-    }
-  
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-left: 2px solid $color_White;
-      height: 14px;
-      border-radius: 2px;
-    }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid $color_White;
+    width: 14px;
+    border-radius: 2px;
   }
 
-  &__minus {
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-top: 2px solid $color_White;
-      width: 14px;
-      border-radius: 2px;
-    }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-left: 2px solid $color_White;
+    height: 14px;
+    border-radius: 2px;
+  }
+}
+
+.round__minus {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+
+  background-color: $color_Melon-Baby;
+  border: none;
+  border-radius: 50%;
+  transition: background-color $transition-time;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color_Melon-Baby_hover;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 2px solid $color_White;
+    width: 14px;
+    border-radius: 2px;
   }
 }

@@ -7,9 +7,8 @@ export const Button: React.FC<ButtonProps> = ({ appearance, children, ...props }
   const formatButton = classNames(styles.button, {
     [styles.colored]: appearance === 'colored',
     [styles.notColored]: appearance === 'notColored',
-    [styles.round]: appearance === 'round',
-    [styles.round__plus]: appearance === 'round',
-    // [styles.round__minus]: appearance === 'round',
+    [styles.round__plus]: appearance === 'round__plus',
+    [styles.round__minus]: appearance === 'round__minus',
   });
 
     console.log(formatButton);
