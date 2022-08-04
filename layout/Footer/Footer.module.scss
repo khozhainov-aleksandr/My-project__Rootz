@@ -1,1 +1,46 @@
 @import '../../styles/variables';
+
+.footer {
+  margin-bottom: 88px;
+}
+
+.mainWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsWrapper {
+  display: flex;
+  flex-direction: column;
+
+  & > h4 {
+    margin-bottom: 32px;
+  }
+
+  & > a {
+    width: 154px;
+  }
+}
+
+.addressWrapper {
+  display: flex;
+  flex-direction: column;
+
+  & > h6 {
+    margin-bottom: 37px;
+  }
+}
+
+.socialWrapper {
+  display: flex;
+  flex-direction: column;
+
+  & > h6 {
+    margin-bottom: 37px;
+  }
+}
+
+.iconsWrapper {
+  display: flex;
+  gap: 18px;
+}

@@ -8,6 +8,8 @@ import { OurTeam } from "../layout/OurTeam";
 import { Challenges } from "../layout/Challenges";
 import { AuthorizationForm } from "../layout/AuthorizationForm";
 import { GetStarted } from "../layout/GetStarted";
+import { CarouselPictures } from "../layout/CarouselPictures";
+import { Footer } from "../layout/Footer";
 
 export default function Home() {
   return (
@@ -23,7 +25,10 @@ export default function Home() {
         <Challenges />
         <AuthorizationForm />
         <GetStarted />
+        <CarouselPictures />
       </Main>
+
+      <Footer />
     </>
   );
 }

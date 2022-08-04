@@ -32,18 +32,18 @@ export const Htag: React.FC<HtagProps> = ({ tag, children }): JSX.Element => {
         </h4>
       );
 
+    case 'h4_upper':
+      return (
+        <h4 className={`${styles.header} ${styles.h4_upper}`}>
+          {children}
+        </h4>
+      );
+
     case 'h5':
       return (
         <h5 className={`${styles.header} ${styles.h5}`}>
           {children}
         </h5>
-      );
-
-    case 'h6_large':
-      return (
-        <h6 className={`${styles.header} ${styles.h6_large}`}>
-          {children}
-        </h6>
       );
 
     case 'h6': 
@@ -53,6 +53,20 @@ export const Htag: React.FC<HtagProps> = ({ tag, children }): JSX.Element => {
         </h6>
       );
 
+    case 'h6_normal': 
+      return (
+        <h6 className={`${styles.header} ${styles.h6_normal}`}>
+          {children}
+        </h6>
+      );
+
+      case 'h6_large':
+        return (
+          <h6 className={`${styles.header} ${styles.h6_large}`}>
+            {children}
+          </h6>
+        );
+      
     default: 
       return <></>;
   }
