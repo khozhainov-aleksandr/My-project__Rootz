@@ -5,5 +5,8 @@
 - Next.js
 - React
 - TypeScript
+- CSS Modules
 - ESlint
 - Vercel
+
+The application is implemented only for Desktop version.
