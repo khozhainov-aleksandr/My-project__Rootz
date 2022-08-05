@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { GetStartedProps, Data } from "./GetStarted.props";
+import { Data } from "./GetStarted.props";
 import { Htag } from "../../components/Htag";
 import { Ptag } from "../../components/Ptag";
 import { Button } from "../../components/Button";
 import styles from './GetStarted.module.scss';
 import classNames from "classnames";
 
-export const GetStarted: React.FC<GetStartedProps> = (): JSX.Element => {
+export const GetStarted = (): JSX.Element => {
   const [selected, setSelected] = useState<null | string>(null);
 
   function selectedAccordion (id: string) {

@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { Pictures } from "./CarouselPictures.props";
 import styles from "./CarouselPictures.module.scss";
 import { Picture } from "../../components/Picture";
-// import classNames from "classnames";
 
 export const CarouselPictures = (): JSX.Element => {
   const [counter, setCounter] = useState<number>(1);

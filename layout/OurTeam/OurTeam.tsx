@@ -1,11 +1,10 @@
 import React from "react";
-import { OurTeamProps } from "./OurTeam.props";
 import { Htag } from "../../components/Htag";
 import { Ptag } from "../../components/Ptag";
 import { Picture } from "../../components/Picture";
 import styles from './OurTeam.module.scss';
 
-export const OurTeam: React.FC<OurTeamProps> = (): JSX.Element => {
+export const OurTeam = (): JSX.Element => {
   return (
     <div className={styles.ourTeam}>
       <div className="container">

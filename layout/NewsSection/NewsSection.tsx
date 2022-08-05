@@ -1,9 +1,8 @@
 import React from "react";
-import { NewsSectionProps } from "./NewsSection.props";
 import { NewsCard } from "../../components/NewsCard";
 import styles from './NewsSection.module.scss';
 
-export const NewsSection: React.FC<NewsSectionProps> = (): JSX.Element => {
+export const NewsSection = (): JSX.Element => {
   return ( 
     <div className={styles.news}>
       <div className="container">

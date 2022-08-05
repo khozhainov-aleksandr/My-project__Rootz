@@ -5,7 +5,6 @@ import { Card } from "../../components/Card";
 import { Picture } from "../../components/Picture";
 import styles from './CarouselCard.module.scss';
 
-
 export const CarouselCard = (): JSX.Element => {
   const [pages, setPages] = useState<CardContent[]>([]);
   const [offset, setOffset] = useState<number>(0);

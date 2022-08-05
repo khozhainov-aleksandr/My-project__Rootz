@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { HeaderProps } from "./Header.props";
 import { Htag } from "../../components/Htag";
+import { Picture } from "../../components/Picture";
 import { Ptag } from "../../components/Ptag";
 import { Button } from "../../components/Button";
 import styles from './Header.module.scss';
 
 export const Header: React.FC<HeaderProps> = ({ children }): JSX.Element => {
+  const [counterCard, setCounterCard] = useState<string>('29 128');
+
   return ( 
     <header className={styles.header}>
       {children}
@@ -14,24 +17,23 @@ export const Header: React.FC<HeaderProps> = ({ children }): JSX.Element => {
           <div className={styles.textWrapper}>
             <Htag tag="h1">Nature needs you</Htag>
 
-            <picture>
-              <source type="image/svg" />
-              <img
-                className={styles.imgNature}
-                src="./signature_on_header.svg"
-                alt="Nature needs you"
-              />
-            </picture>
+            <Picture
+              format="svg"
+              imgName="signature_on_header"
+              altDes="Nature needs you"
+            />
 
             <Ptag size="normal" className={styles.description}>
-              The scale of the challenges facing our planet can seem daunting, but we can all do something.
+              The scale of the challenges facing our planet can seem
+              daunting, but we can all do something.
             </Ptag>
 
             <form className={styles.findPlaceForm} action="#">
-              <picture className={styles.findPlaceImg}>
-                <source type="image/svg" />
-                <img src="./locationPlace.svg" alt="Location the place" />
-              </picture>
+              <Picture
+                format="svg"
+                imgName="locationPlace"
+                altDes="Location the place"
+              />
 
               <input
                 className={styles.findPlaceInput}
@@ -52,21 +54,22 @@ export const Header: React.FC<HeaderProps> = ({ children }): JSX.Element => {
           </div>
 
           <div className={styles.pictureWrapper}>
-          <picture>
-              <source type="image/svg"/>
-              <img
-                src="./parrot.svg"
-                alt="Colored Parrot"
-              />
-            </picture>
+            <Picture
+              format="svg"
+              imgName="parrot"
+              altDes="Colored Parrot"
+            />
 
-            <picture className={styles.parrotCardWrapper}>
-              <source type="image/svg" />
-              <img
-                src="./parrot-card.svg"
-                alt="Parrot card"
+            <div className={styles.parrotCardWrapper}>
+              <Picture
+                format="svg"
+                imgName="parrot-card"
+                altDes="Parrot card"
               />
-            </picture>
+
+              <span className={styles.titleCard}>Members</span>
+              <span className={styles.counterCard}>{counterCard}</span>
+            </div>
           </div>
         </div>
       </div>

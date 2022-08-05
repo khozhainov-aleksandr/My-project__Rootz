@@ -1,19 +1,19 @@
 import React from "react";
-import { NavigationProps } from "./Navigation.props";
+import { Picture } from "../../components/Picture";
 import { LinkTag } from "../../components/LinkTag";
 import { Button } from "../../components/Button";
 import styles from './Navigation.module.scss';
-// import classNames from "classnames";
 
-export const Navigation: React.FC<NavigationProps> = (): JSX.Element => {
+export const Navigation = (): JSX.Element => {
   return ( 
     <nav>
       <div className="container">
         <div className={styles.mainWrapper}>
-          <picture className={styles.mainLogo}>
-            <source type="image/svg" />
-            <img src="./logo_and_name.svg" alt="Logo company Rootz" />
-          </picture>
+          <Picture
+            format="svg"
+            imgName="logo_and_name"
+            altDes="Logo company Rootz"
+          />
 
           <ul className={styles.list}>
             <li className={styles.item}>
@@ -38,7 +38,9 @@ export const Navigation: React.FC<NavigationProps> = (): JSX.Element => {
             </li>
           </ul>
 
-          <Button appearance="notColored">Apply</Button>
+          <Button appearance="notColored">
+            Apply
+          </Button>
         </div>
       </div>
     </nav>

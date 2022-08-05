@@ -6,10 +6,10 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 4px solid $color_Black-Velvet;  
-}
 
-.mainLogo {
-  height: 37px;
+  & picture {
+    height: 37px;
+  }
 }
 
 .list {

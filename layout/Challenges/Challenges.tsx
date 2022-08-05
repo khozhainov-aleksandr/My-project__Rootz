@@ -1,11 +1,10 @@
 import React from "react";
-import { ChallengesProps } from "./Challenges.props";
 import { Htag } from "../../components/Htag";
 import { Ptag } from "../../components/Ptag";
 import { Picture } from "../../components/Picture";
 import styles from './Challenges.module.scss';
 
-export const Challenges: React.FC<ChallengesProps> = (): JSX.Element => {
+export const Challenges = (): JSX.Element => {
   return (
     <div className={styles.challenges}>
       <div className="container">

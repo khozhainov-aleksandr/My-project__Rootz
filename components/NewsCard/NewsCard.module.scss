@@ -5,13 +5,13 @@
   align-items: center;
   column-gap: 24px;
   height: 112px;
-}
 
-.img {
-  height: inherit;
-
-  img {
-    height: 100%;
+  & picture {
+    height: inherit;
+  
+    img {
+      height: 100%;
+    }
   }
 }
 

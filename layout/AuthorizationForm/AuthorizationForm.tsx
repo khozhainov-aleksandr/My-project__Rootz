@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { AuthorizationFormProps } from "./AuthorizationForm.props";
 import { Htag } from "../../components/Htag";
 import { Ptag } from "../../components/Ptag";
 import { Button } from "../../components/Button";
 import styles from './AuthorizationForm.module.scss';
 
-export const AuthorizationForm: React.FC<AuthorizationFormProps> = (): JSX.Element => {
+export const AuthorizationForm = (): JSX.Element => {
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [disabledBtn, setDisabledBtn] = useState<boolean>(true);

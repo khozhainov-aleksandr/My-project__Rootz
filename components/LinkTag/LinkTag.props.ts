@@ -4,4 +4,5 @@ export interface LinkTagProps extends DetailedHTMLProps<HTMLAttributes<HTMLAncho
   children: ReactNode;
   size?: 'large' | 'normal' | 'small' | 'extraSmall' | 'extraSmall500';
   href?: string;
+  tg?: '_blank';
 }
