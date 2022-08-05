@@ -18,7 +18,7 @@ export const GetStarted = (): JSX.Element => {
   }
 
   return (
-    <div className={styles.getStarted}>
+    <div className={styles.getStarted} id="mission">
       <div className="container">
         <div className={styles.mainWrapper}>
           <div className={styles.descriptionWrapper}>

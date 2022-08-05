@@ -6,7 +6,7 @@ import styles from './Challenges.module.scss';
 
 export const Challenges = (): JSX.Element => {
   return (
-    <div className={styles.challenges}>
+    <div className={styles.challenges} id="places">
       <div className="container">
         <div className={styles.mainWrapper}>
           <div className={styles.titleWrapper}>

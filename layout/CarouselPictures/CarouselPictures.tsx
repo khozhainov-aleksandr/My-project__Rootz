@@ -12,8 +12,7 @@ export const CarouselPictures = (): JSX.Element => {
   const settings = {
     className: `${styles.slider}`,
     infinite: true,
-    centerPadding: "400px",
-    slidesToShow: 5,
+    slidesToShow: 3,
     speed: 500,
     afterChange: function(index: number) {
       setCounter(index + 1);

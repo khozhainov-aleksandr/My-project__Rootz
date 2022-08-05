@@ -6,7 +6,7 @@ import styles from './OurTeam.module.scss';
 
 export const OurTeam = (): JSX.Element => {
   return (
-    <div className={styles.ourTeam}>
+    <div className={styles.ourTeam} id="team">
       <div className="container">
         <div className={styles.mainWrapper}>
           <div className={styles.headerWrapper}>

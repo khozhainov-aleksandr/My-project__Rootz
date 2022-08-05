@@ -1,8 +1,11 @@
 @import './variables';
-@import './mixin';
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

@@ -22,17 +22,17 @@ export const Navigation = (): JSX.Element => {
               </LinkTag>
             </li>
             <li className={styles.item}>
-              <LinkTag href="#" size="normal">
+              <LinkTag href="#mission" size="normal">
                 Our&nbsp;mission
               </LinkTag>
             </li>
             <li className={styles.item}>
-              <LinkTag href="#" size="normal">
+              <LinkTag href="#places" size="normal">
                 Places
               </LinkTag>
             </li>
             <li className={styles.item}>
-              <LinkTag href="#" size="normal">
+              <LinkTag href="#team" size="normal">
                 Team
               </LinkTag>
             </li>
