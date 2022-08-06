@@ -9,4 +9,10 @@
 - ESlint
 - Vercel
 
+### Description
+- Slider manual creation
+- Form validation and cleanup after submission
+- Accordion manual creation
+- Slider connected through the library
+
 The application is implemented only for Desktop version.
